@@ -1,3 +1,33 @@
+[general]
+#  import = ["~/.cache/wal/colors-alacritty.toml"]
+  import = ["./colors.toml"]
+
+[window]
+#opacity = 1
+#dynamic_padding = true
+#padding.x = 32
+#padding.y = 32
+  opacity = 1.0
+  dynamic_padding = false
+  padding.x = 50
+  padding.y = 50
+  decorations = "Full"
+  decorations_theme_variant = "Dark" # "Light"
+
+[font]
+  normal.family = "JetBrains Mono Nerd Font"
+  bold.family = "JetBrains Mono Nerd Font"
+#bold.family = "Cascadia Code PL"
+  italic.family = "JetBrains Mono Nerd Font"
+#italic.family = "Cascadia Code PL"
+  bold_italic.family = "JetBrains Mono Nerd Font"
+#bold_italic.family = "Cascadia Code PL"
+  normal.style = "Regular"
+  bold.style = "Bold"
+  italic.style = "Italic"
+  bold_italic.style = "Bold Italic" 
+  size = 14
+
 # $HOME/.config/alacritty/alacritty.toml
 # by Rito Ghosh 2023-10-06
 
@@ -17,33 +47,6 @@
 # Below is my initial set-up. The TOML homepage (https://toml.io/en/v1.0.0) was very helpful in figuring this out. 
 # I put the file alacritty.toml in $HOME/.config/alacritty. However it can be kept anywhere among the places mentioned in
 # https://github.com/alacritty/alacritty/tree/master#configuration
-
-[general]
-#  import = ["~/.cache/wal/colors-alacritty.toml"]
-  import = ["./colors.toml"]
-
-[window]
-  opacity = 1
-  dynamic_padding = true
-  padding.x = 28
-  padding.y = 28
-  decorations = "Full"
-  decorations_theme_variant = "Dark" # "Light"
-
-[font]
-  normal.family = "JetBrains Mono Nerd Font"
-  bold.family = "JetBrains Mono Nerd Font"
-#bold.family = "Cascadia Code PL"
-  italic.family = "JetBrains Mono Nerd Font"
-#italic.family = "Cascadia Code PL"
-  bold_italic.family = "JetBrains Mono Nerd Font"
-#bold_italic.family = "Cascadia Code PL"
-  normal.style = "Regular"
-  bold.style = "Bold"
-  italic.style = "Italic"
-  bold_italic.style = "Bold Italic" 
-  size = 14
-
 # Tip: for inspiration, look for values in the source code files of your favorite VS Code themes, and use the color picker in
 # Google to test colors before setting a value, or simply using an editor such as VS Code where colors are displayed in a 
 # small box when a HEX is detected by the editor.
