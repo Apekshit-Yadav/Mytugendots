@@ -1,5 +1,6 @@
 //  Keybinds
 binds {
+  SUPER+Shift+u { spawn-sh "killall swaync || swaync -c ~/testconfigs/niristyle/config.json -s ~/testconfigs/niristyle/style.css";}
   Mod+Tab repeat=false {toggle-overview;}
   Mod+Backspace {spawn-sh "~/HyprlandScripts/fuzzelPowermenu.sh";}
   //;;scripts
@@ -17,9 +18,9 @@ binds {
   SUPER+B { spawn "zen-browser";}
   SUPER+C { spawn "code";}
   SUPER+G { spawn "github-desktop";}
-  Alt+Space { spawn-sh "pkill rofi || rofi -show drun -config ~/HyprlandScripts/style-12.rasi" ;}
+  Mod+Space { spawn-sh "pkill rofi || rofi -show drun -config ~/HyprlandScripts/style-12.rasi" ;}
   Alt+Backslash { spawn "fuzzel" "--config" ".config/fuzzel/fuzzelniri.ini";}
-  Mod+Space { spawn "fuzzel" "--config" ".config/fuzzel/fuzzelniri.ini";}
+  Alt+Space { spawn "fuzzel" "--config" ".config/fuzzel/fuzzelniri.ini";}
   Mod+Alt+H {spawn-sh "alacritty -e nvim ~/.config/niri/config.kdl";}
   Mod+Q repeat=false { close-window; }
   Alt+F4 repeat=false { close-window;}
@@ -45,8 +46,8 @@ binds {
   Mod+Shift+Down { move-window-down; }
   
   Mod+Shift+H { move-column-left; }
-  Mod+Shift+J { move-window-down; }
-  Mod+Shift+K { move-window-up; }
+  Mod+Shift+J { move-window-to-workspace-down; }
+  Mod+Shift+K { move-window-to-workspace-up; }
   Mod+Shift+L { move-column-right; }
   
   Mod+Shift+Page_Down { move-column-to-workspace-down; }
@@ -62,9 +63,9 @@ binds {
   Mod+BracketLeft { consume-or-expel-window-left; }
   Mod+BracketRight { consume-or-expel-window-right; }
   
-  Alt+X { switch-preset-column-width; }
-  Alt+Shift+X { switch-preset-window-height; }
-  Alt+Ctrl+X { reset-window-height; }
+  Mod+X { switch-preset-column-width; }
+  Mod+Shift+X { switch-preset-window-height; }
+  Mod+Ctrl+X { reset-window-height; }
   Mod+A { maximize-column; }
   Alt+return { fullscreen-window; }
   Mod+Shift+S { fullscreen-window; }
@@ -117,6 +118,7 @@ binds {
   Ctrl+Alt+S { spawn-sh "~/HyprlandScripts/nirirofishot.sh" ;}
   
   //Mod+N { spawn-sh "$(('eww get isnotiopen' == 'true' ? 'eww close notifications' : 'eww open notifications')) ";}
+  Mod+SHIFT+N {spawn-sh "swaync-client --toggle-panel";}
   Mod+N {
       spawn-sh "
           if [ \"$(eww get isnotiopen)\" = \"true\" ]; then

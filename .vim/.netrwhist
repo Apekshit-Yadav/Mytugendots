@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =8
+let g:netrw_dirhist_8='/home/papa/.config/Code - OSS/User'
+let g:netrw_dirhist_7='/home/papa/.config/Code - OSS'
+let g:netrw_dirhist_6='/home/papa/.config'
+let g:netrw_dirhist_5='/home/papa'
+let g:netrw_dirhist_4='/home/papa/.config/matugen/templates'
+let g:netrw_dirhist_3='/home/papa/.config'
+let g:netrw_dirhist_2='/home/papa/.config/matugen'
+let g:netrw_dirhist_1='/home/papa/.config/matugen/templates'
+let g:netrw_dirhist_0='/home/papa/.config/matugen'
+let g:netrw_dirhist_9='/home/papa/.config/fuzzel'

@@ -4,8 +4,9 @@
 $fg: $on_primary_container;
 $surf: $primary_container;
 $accent: $primary;
-$icns: 22px;
-$txt: 16px;
+$icns: 24px;
+$txt: 18px;
+$panebg:darken($surf,10%);
 * {
     margin:0px;
     padding:0px;
@@ -16,29 +17,29 @@ $txt: 16px;
   border-radius: 12px;
 
   &.top {
-    box-shadow: -24px -24px 0px 0px $surf;
+    box-shadow: -24px -24px 0px 0px $panebg;
   }
 
   &.bottom {
-    box-shadow: -24px 24px 0px 0px $surf;
+    box-shadow: -24px 24px 0px 0px $panebg;
   }
 
   &.topryt {
-    box-shadow: 24px -24px 0px 0px $surf;
+    box-shadow: 24px -24px 0px 0px $panebg;
   }
 
   &.bottomryt {
-    box-shadow: 24px 24px 0px 0px $surf;
+    box-shadow: 24px 24px 0px 0px $panebg;
   }
 }
 
 .panel {
-  background: $surf;
+  background: $panebg;
 }
 
 .bar {
-  min-width: 42px;
-  background: $surf;
+  min-width: 48px;
+  background: $panebg;
   border-radius: 0px 0px;
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -143,7 +144,7 @@ $txt: 16px;
   &.active {
     color: invert-color($primary);
     padding: 8px 0px;
-    background: $accent;
+    background: darken($primary,45%);
     border-radius: 8px;
     min-height: 8px;
     transition: all 0.2s ease-out;
@@ -268,7 +269,7 @@ $txt: 16px;
 }
 
 .systray {
-  background: $accent;
+  background: darken($primary,45%);
   border-radius: 24px;
   padding: 8px 0px;
   margin: 8px;
